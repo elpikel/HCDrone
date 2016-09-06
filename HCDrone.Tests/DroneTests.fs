@@ -18,3 +18,8 @@ let ``Should Take Off and Land`` () =
     drone.Stop()
     
     1 |> should equal 1
+
+[<Fact>]
+let ``Should fly to next room -> fly back``() =
+
+    1 |> should equal 2
