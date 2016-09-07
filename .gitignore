@@ -114,3 +114,6 @@ UpgradeLog*.XML
 
 # OS X
 .DS_Store
+
+# NCrunch
+*.ncrunch*
