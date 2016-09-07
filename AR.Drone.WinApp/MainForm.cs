@@ -43,20 +43,20 @@ namespace AR.Drone.WinApp
         {
             InitializeComponent();
 
-            _videoPacketDecoderWorker = new VideoPacketDecoderWorker(PixelFormat.BGR24, true, OnVideoPacketDecoded);
-            _videoPacketDecoderWorker.Start();
+            //_videoPacketDecoderWorker = new VideoPacketDecoderWorker(PixelFormat.BGR24, true, OnVideoPacketDecoded);
+            //_videoPacketDecoderWorker.Start();
 
             _droneClient = new DroneClient("192.168.1.1");
-            _droneClient.NavigationPacketAcquired += OnNavigationPacketAcquired;
-            _droneClient.VideoPacketAcquired += OnVideoPacketAcquired;
-            _droneClient.NavigationDataAcquired += data => _navigationData = data;
+            //_droneClient.NavigationPacketAcquired += OnNavigationPacketAcquired;
+            //_droneClient.VideoPacketAcquired += OnVideoPacketAcquired;
+            //_droneClient.NavigationDataAcquired += data => _navigationData = data;
 
-            tmrStateUpdate.Enabled = true;
-            tmrVideoUpdate.Enabled = true;
+            //tmrStateUpdate.Enabled = true;
+            //tmrVideoUpdate.Enabled = true;
 
-            _playerForms = new List<PlayerForm>();
+            //_playerForms = new List<PlayerForm>();
 
-            _videoPacketDecoderWorker.UnhandledException += UnhandledException;
+            //_videoPacketDecoderWorker.UnhandledException += UnhandledException;
         }
 
         private void UnhandledException(object sender, Exception exception)
